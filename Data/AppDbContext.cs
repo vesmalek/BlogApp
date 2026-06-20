@@ -1,3 +1,4 @@
+using BlogApp.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlogApp.Data;
@@ -8,4 +9,6 @@ public class AppDbContext : DbContext
     {
         
     }
+
+    public DbSet<Article> Articles { get; set; }
 }
